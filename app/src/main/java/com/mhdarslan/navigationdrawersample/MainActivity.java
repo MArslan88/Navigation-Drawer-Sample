@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
 
         // default fragment call on open app
-        loadFragment(new NotesFragment());
+        loadFragment(new HomeFragment());
 
         // click listener
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.optHome:
                         // home
-                        Toast.makeText(MainActivity.this, "Home", Toast.LENGTH_SHORT).show();
+                        loadFragment(new HomeFragment());
                         break;
                     case R.id.settings:
                         // setting
