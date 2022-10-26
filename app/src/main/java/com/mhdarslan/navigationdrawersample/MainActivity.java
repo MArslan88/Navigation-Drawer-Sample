@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.settings:
                         // setting
-                        Toast.makeText(MainActivity.this, "Setting", Toast.LENGTH_SHORT).show();
+                        loadFragment(new SettingFragment());
                         break;
                 }
                 // drawer should be closed automatically after click on any option
